@@ -1,13 +1,6 @@
 pipeline {
     agent any
 
-    stages {
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/ganesh55655555/ganeshhttp-task.git'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 script {
